@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(31, 31, 31);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(31, 31, 31);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-color: rgb(53, 53, 53);
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+}
+
+.sumar { 
+    background-color: #397c3b; 
+    color: white; 
+}
+.restar { 
+    background-color: #a03d36; 
+    color: white; 
+}
+.multiplicar { 
+    background-color: #195281; 
+    color: white; 
+}
+.dividir { 
+    background-color: #61196d; 
+    color: white; 
+}
+
+.resultado {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.error { color: rgb(121, 51, 51); }
+.exito { color: rgb(50, 117, 50); }
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
